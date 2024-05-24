@@ -1,6 +1,6 @@
-package org.example.Person;
+package org.example.Odev4.Person;
 
-import org.example.Department.Department;
+import org.example.Odev4.Department.Department;
 
 public class Person {
         public static void main(String[] args) {

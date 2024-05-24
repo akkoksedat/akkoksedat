@@ -1,4 +1,4 @@
-package org.example.Department;
+package org.example.Odev4.Department;
 
 public class Department {
 
