@@ -7,7 +7,7 @@ public class Person {
                 Department person1 = new Department();
                 Department person2 = new Department();
 
-                person1.name = "Sedat";
+                person1.name = "Sedats";
                 person1.surname = "Akkok";
                 person1.position = "qa engineer";
 
