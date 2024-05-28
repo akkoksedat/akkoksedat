@@ -34,7 +34,7 @@ package org.example.Odev5;
 
         public static void main(String[] args) {
             odev5farkli personel1 = new odev5farkli("Ahmet", 28);
-            odev5farkli personel2 = new odev5farkli("Ayşe", 22);
+            odev5farkli personel2 = new odev5farkli("Ayşe", 35);
 
             double maas1 = personel1.maasHesapla();
             double prim1 = personel1.primHesapla();
