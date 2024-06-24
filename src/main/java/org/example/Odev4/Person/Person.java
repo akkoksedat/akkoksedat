@@ -2,7 +2,12 @@ package org.example.Odev4.Person;
 
 import org.example.Odev4.Department.Department;
 
-public class Person {
+import java.time.LocalDate;
+
+public abstract class Person {
+        public Person(String ad, String soyad, LocalDate dogumTarihi) {
+        }
+
         public static void main(String[] args) {
                 Department person1 = new Department();
                 Department person2 = new Department();
@@ -24,6 +29,5 @@ public class Person {
         }
 
 
-
-
+        public abstract int emeklilikYasiniHesapla();
 }
