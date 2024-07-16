@@ -27,17 +27,17 @@ public class GenericClass<T> {
         // Array search examples
         Integer[] intArray = {1, 2, 3, 4, 5};
         System.out.println(findElement(intArray, 3)); // Output: 3
-        System.out.println(findElement(intArray, 6)); // Output: null
+        System.out.println(findElement(intArray, 6)); // Output: -1
 
         String[] strArray = {"apple", "banana", "cherry"};
         System.out.println(findElement(strArray, "banana")); // Output: banana
-        System.out.println(findElement(strArray, "orange")); // Output: null
+        System.out.println(findElement(strArray, "orange")); // Output: -1
     }
 
-    public static <T> T findElement(T[] array, T element) {
+    public static <T> Object findElement(T[] array, T element) {
         Optional<T> result = Arrays.stream(array)
                 .filter(e -> e.equals(element))
                 .findFirst();
-        return result.orElse(null);
+        return result.orElse((T) new Integer(-1));
     }
 }
